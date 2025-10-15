@@ -6,11 +6,3 @@ defineBackend({
   auth,
   data,
 });
-
-const backend = defineBackend({
-  auth,
-  data
-})
-
-const { cfnUserPool } = backend.auth.resources.cfnResources
-cfnUserPool.usernameAttributes = []
