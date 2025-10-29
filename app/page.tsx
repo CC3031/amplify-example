@@ -55,6 +55,8 @@ export default function App() {
       <footer>
         <a id="signIn" href="">Want access to individual character analysis? Sign in for free!</a>
         {/* Authentication here */}
+        <a className="links" href="">Character Analysis</a>
+        
       </footer>
       
     </main>
