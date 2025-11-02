@@ -67,16 +67,16 @@ body {
   .links {
     font-weight: 800;
     text-decoration: none;
-    color: black;
+    color: white;
     margin: 10px;
   }
 
-  a:hover {
-    color: white
+  .links:hover {
+    color: rgb(114, 110, 110)
   }
   
   img {
-    filter: brightness(0.4)
+    filter: brightness(0.8)
   }
 
   #signIn {
@@ -89,4 +89,16 @@ body {
 
   #imgDiv {
     border: #1a1a1a;
+  }
+
+  .mainLink {
+    color: white;
+    text-decoration: none;
+    font-weight: 800;
+    margin: 10px;
+    font-size: 25px;
+  }
+
+  .mainLink:hover {
+    color: rgb(114, 110, 110)
   }
