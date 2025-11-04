@@ -2,27 +2,17 @@
 
 import "./../app/app.css";
 import "@aws-amplify/ui-react/styles.css";
-import { Amplify } from 'aws-amplify';
-import outputs from '../amplify_outputs.json';
-import { Authenticator } from "@aws-amplify/ui-react";
-import Link from 'next/link';
-import Header from './components/Header';
+import { Amplify } from "aws-amplify";
+import outputs from "../amplify_outputs.json";
+import Link from "next/link";
+import Header from "./components/Header";
 
 Amplify.configure(outputs);
 
-export default function App({}: {children: React.ReactNode}) {
+export default function App() {
   return (
     <main>
-      <Header
-        hrefs={[
-          '/',
-          '/black_swordsman',
-          '/golden_age',
-          '/conviction',
-          '/falcon_millennium',
-          '/fantasia'
-        ]}
-      />
+      <Header/>
       <div id="imgDiv">
         <img src="https://tse1.mm.bing.net/th/id/OIP.3JAvD_D10Kco9whN7NjJ3wHaId?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"/>
       </div>
@@ -33,4 +23,6 @@ export default function App({}: {children: React.ReactNode}) {
       
     </main>
   );
+  // talm bout sum couldnt get auth to work, amplify to deploy,
+  // api to show, or import tw css
 }

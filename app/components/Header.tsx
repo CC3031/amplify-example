@@ -1,11 +1,16 @@
 'use client';
 import Link from 'next/link';
 
-interface HeaderProps {
-    hrefs: string[];
-}
+export default function Header() {
+  const hrefs = [
+      '/',
+      '/arcs/black_swordsman',
+      '/arcs/golden_age',
+      '/arcs/conviction',
+      '/arcs/falcon_of_the_millennium',
+      '/arcs/fantasia'
+    ];
 
-export default function Header({ hrefs }: HeaderProps) {
     return (
         <header>
         <Link className="mainLink" href={hrefs[0]}>Berserk Arc Analysis Website</Link>

@@ -102,3 +102,7 @@ body {
   .mainLink:hover {
     color: rgb(114, 110, 110)
   }
+
+  h3, p {
+    color: white
+  }
